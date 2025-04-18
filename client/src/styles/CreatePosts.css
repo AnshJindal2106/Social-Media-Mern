@@ -1,0 +1,133 @@
+.createPostModalBg {
+    position: fixed;
+    z-index: 8;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+}
+
+.form-select {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #00ffe1;
+    border: 1px solid #00ffe1;
+}
+
+.createPostContainer {
+    z-index: 999;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 20vh;
+    left: 35vw;
+    width: 30vw;
+    max-height: 90vh;
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid #00ffe1a1;
+    box-shadow: 0 0 15px #00ffe1a8;
+    color: #e0f7ff;
+}
+
+.closeCreatePost {
+    float: right;
+    color: #bbbbbb;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.createPostTitle {
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.6rem;
+    color: #00ffe1;
+}
+
+.createPostHr {
+    margin: 0;
+    margin-bottom: 1rem;
+    border-color: #00ffe15e;
+}
+
+.uploadBox {
+    width: 100%;
+}
+
+.uploadBox #uploadPostFile {
+    width: 100%;
+    color: #00ffe1;
+    background-color: transparent;
+    border: 1px dashed #00ffe1b5;
+    padding: 8px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#uploadPostFile::-webkit-file-upload-button {
+    display: none;
+}
+
+#uploadPostFile::before {
+    content: 'Upload Image/Video';
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #00ffe1b2;
+    color: #00ffe1;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.descriptionInput input {
+    border: 1px solid #00ffe1b3;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    padding: 10px;
+    color: #e0f7ff;
+    border-radius: 0.4rem;
+}
+
+.descriptionInput label,
+.postLocation label {
+    color: #66f2ff;
+}
+
+.createPostBody form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.createPostBody form button {
+    width: fit-content;
+    border: none;
+    padding: 10px 30px;
+    background: linear-gradient(90deg, #00ffe1, #f47cff);
+    color: #000;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.createPostBody form button:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 600px) {
+    .createPostContainer {
+        top: 20vh;
+        left: 5vw;
+        width: 90vw;
+    }
+
+    .uploadImgBox label {
+        width: 82vw;
+    }
+}

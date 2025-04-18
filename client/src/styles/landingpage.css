@@ -1,0 +1,348 @@
+.landingPage {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4faff;
+    color: #1a1a2e;
+}
+
+/* ====================== Header ====================== */
+.landing-header {
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    width: 85%;
+    padding: 0 3%;
+    border-radius: 1.7rem;
+    display: flex;
+    position: fixed;
+    top: 3vh;
+    z-index: 4;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0, 119, 255, 0.15);
+}
+
+.landing-header-logo img {
+    height: 40px;
+}
+
+.landing-header ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.landing-header ul li {
+    list-style-type: none;
+}
+
+.landing-header ul li a {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0077ff;
+    transition: color 0.3s ease;
+}
+
+.landing-header ul li a:hover {
+    color: #0056d2;
+}
+
+/* ====================== Hero ====================== */
+.landing-body {
+    margin-top: 13vh;
+    width: 100%;
+}
+
+.landing-hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #e3f2fd, #f4faff);
+}
+
+.landing-hero-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0% 2% 5%;
+    justify-content: center;
+}
+
+.landing-hero-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #0077ff;
+    margin-bottom: 1rem;
+}
+
+.landing-hero-content p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* ====================== Auth Form ====================== */
+.authForm {
+    margin-top: 5%;
+    padding: 25px;
+    width: 70%;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 119, 255, 0.1);
+    border-radius: 0.7rem;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.authForm h2 {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #0077ff;
+    font-size: 1.8rem;
+}
+
+.authFormInputs label {
+    color: #0077ff;
+    font-weight: 500;
+}
+
+.authFormInputs input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #cfe8ff;
+    border-radius: 5px;
+    background-color: #f9fcff;
+    color: #333;
+    outline: none;
+}
+
+.authForm button {
+    background: linear-gradient(to right, #0077ff, #00c6ff);
+    font-weight: bold;
+    color: white;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.authForm button:hover {
+    background: #0056d2;
+}
+
+.authForm p {
+    margin-top: 5%;
+    color: #333;
+}
+
+.authForm p span {
+    color: #0077ff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ====================== Hero Image ====================== */
+.landing-hero-image {
+    width: 50%;
+    display: flex;
+    gap: 0px;
+    align-items: end;
+    justify-content: space-evenly;
+    padding-bottom: 10vh;
+    overflow: hidden;
+}
+
+.landing-hero-image .back {
+    height: 80vh;
+    width: 30vw;
+    transform: skew(-15deg);
+    background-image: url('../images/landing-pic.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px solid #00c6ff;
+    border-radius: 15px;
+}
+
+#landing-image-sidebar-left,
+#landing-image-sidebar-right {
+    background: linear-gradient(145deg, #00c6ff 0%, #0077ff 55%, #0056d2 100%);
+    transform: skew(-15deg);
+    position: relative;
+}
+
+#landing-image-sidebar-left {
+    height: 30vh;
+    width: 5vw;
+    margin-right: 35px;
+    margin-left: 5px;
+}
+
+#landing-image-sidebar-right {
+    height: 50vh;
+    width: 5vw;
+    left: -30px;
+}
+
+/* ====================== About Section ====================== */
+.landing-about {
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 5rem;
+    padding: 4rem 2rem;
+}
+
+.about-1, .about-2 {
+    display: flex;
+    width: 100%;
+}
+
+.about-1 img, .about-2 img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-1-content, .about-2-content {
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-1-content h3, .about-2-content h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #0077ff;
+    font-size: 2rem;
+}
+
+.about-1-content p, .about-2-content p {
+    font-family: 'Work Sans', sans-serif;
+    color: #444;
+    line-height: 1.6;
+}
+
+.about-1-content a, .about-2-content a {
+    font-family: 'Poppins', sans-serif;
+    width: fit-content;
+    padding: 10px 25px;
+    background: linear-gradient(145deg, #0077ff, #00c6ff);
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* ====================== Features ====================== */
+.landing-features {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #f4faff;
+}
+
+.landing-features h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #0077ff;
+    font-size: 2.2rem;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.feature-card {
+    width: 250px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 119, 255, 0.1);
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #0077ff;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    font-family: 'Work Sans', sans-serif;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+/* ====================== Testimonials ====================== */
+.landing-testimonials {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.landing-testimonials h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #0077ff;
+    font-size: 2.2rem;
+}
+
+.testimonial {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    font-style: italic;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ====================== Footer ====================== */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0f0ff;
+    padding: 20px;
+}
+
+.footer p {
+    color: #0077ff;
+}
+
+/* ====================== Scroll To Top ====================== */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0077ff;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 119, 255, 0.3);
+}
